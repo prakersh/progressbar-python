@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+README FOR PROGRESSBAR-PYTHON
+-------------------------------------------------------------------------------
+This is a example of how to implement progress bar in python.
+
+=============
+Prerequisites
+=============
+python3
+
+
+=====================
+Using progress_bar.py
+=====================
+To use progress bar
+we'll need to import update_progress function from progress_bar
+Then call the function with 2 params, current progress and total progress.
+Like if you want to show progress bar for copying 100MB of data. 
+Then you'll need to pass:
+    amount of data copied in 1st param
+    total data in 2nd param. 
+Say if 17MB of data is copied out of 100MB then you'll need to call 
+update_progress(17, 100)
+
+
+Sample flow of using  progress_bar.py
+"""
+from progress_bar import update_progress
+update_progress(0, 100)
+
+# Complete half task
+update_progress(50, 100)
+
+# Complete full task
+update_progress(100, 100)
+
+"""
+
+progress_bar_test.py is sample test verify if progress bar is working on your system.
+it can be executed by "python3 progress_bar_test.py"
+
+====================================================
+For any further queries ping me at prakersh@live.com
+====================================================
